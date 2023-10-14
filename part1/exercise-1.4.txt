@@ -1,0 +1,19 @@
+Creating a docker container and running it with a command: 
+
+sudo docker container run -it ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+I've noticed that the curl is not installed, so I used the command 'exit'.
+
+To start the container again, I've used a command: 'docker start CONTAINER_ID'
+
+To access the CLI of ubuntu in container, I've used: 
+
+sudo docker exec -it CONTAINER_NAME bash
+
+And proceeded to install curl.
+
+apt-get -y update; apt-get -y install curl
+
+After that runned the script again and curl worked for helsinki.fi as mentioned in
+exercise description.
+
