@@ -1,0 +1,1 @@
+Ubuntu web service takes 85 MB and Alpine takes 15.7 MB.
